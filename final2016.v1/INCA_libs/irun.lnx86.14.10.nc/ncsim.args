@@ -1,0 +1,24 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++define+IPATH=\"01_gcd_plain_bin.dat\"+DPATH=\"01_gcd_plain_data.dat\"
++access+r
++define+NETLIST
+-MESSAGES
++EMGRLOG
+ncverilog.log
+-XLSTIME
+1484596830
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx86.14.10.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx86.14.10.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.14.10.nc/hdl.var
+-XLNAME
+ncverilog
+-XLVERSION
+"TOOL:	ncverilog	14.10-s005"

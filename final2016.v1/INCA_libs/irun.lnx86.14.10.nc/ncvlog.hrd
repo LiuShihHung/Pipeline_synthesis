@@ -1,0 +1,10 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-DEFINE
+IPATH=\"01_gcd_plain_bin.dat\"
+-DEFINE
+DPATH=\"01_gcd_plain_data.dat\"
+-DEFINE
+NETLIST
