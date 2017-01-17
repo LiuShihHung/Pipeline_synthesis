@@ -203,8 +203,8 @@ al_project/final2016.v1,
 version = Verdi3_J-2014.12-SP3
 wave/aliasEditor.fm = 673,170,584,536
 openfile.fm = 100,100,723,532
-wave/openWFile.fm = 336,156,823,696
 wave/activeFile.fm = 100,100,530,200
+wave/openWFile.fm = 336,156,823,696
 wave/getSignal.fm = 100,100,856,562
 [General]
 autoSaveSession = FALSE

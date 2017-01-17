@@ -12,9 +12,9 @@ RAM2Kx32.v
 /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v
 risc_t.v
 -DEFINE
-IPATH=\"01_gcd_plain_bin.dat\"
+IPATH=\"my_test.dat\"
 -DEFINE
-DPATH=\"01_gcd_plain_data.dat\"
+DPATH=\"my_testd.dat\"
 RAM2Kx32.v
 -DEFINE
 NETLIST

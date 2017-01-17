@@ -8,7 +8,9 @@ VLOG        = ncverilog
 
 GCD			= risc_t.v +define+IPATH=\"01_gcd_plain_bin.dat\"+DPATH=\"01_gcd_plain_data.dat\"
 
-MULT		= risc_t.v +define+IPATH=\"02_mult.dat\"+DPATH=\"01_gcd_plain_data.dat\"
+MULT		= risc_t.v +define+IPATH=\"02_mult.dat\"+DPATH=\"02_multd.dat\"
+
+my			= risc_t.v +define+IPATH=\"my_test.dat\"+DPATH=\"my_testd.dat\"
 
 SUMMATION	= risc_t.v +define+IPATH=\"08_summation.dat\"+DPATH=\"08_summationd.dat\"
 
@@ -51,9 +53,12 @@ RM          = -rm -rf
 gcd :
 	$(VLOG) $(NONSYN) $(GCD) $(RAMMODEL) $(VLOGARG) $(DEBUG) +define+CYC=120
 	
+my :
+	$(VLOG) $(NONSYN) $(my) $(RAMMODEL) $(VLOGARG) $(DEBUG) +define+CYC=800
+	
 mult :
 
-	$(VLOG) $(NONSYN) $(MULT) $(RAMMODEL) $(VLOGARG) $(DEBUG) +define+CYC=120
+	$(VLOG) $(NONSYN) $(MULT) $(RAMMODEL) $(VLOGARG) $(DEBUG) +define+CYC=200
 
 gcdsyn :
 	$(VLOG) $(SYNSRC) $(GCD) $(RAMMODEL)  $(VLOGARGSRC) +define+NETLIST
@@ -64,6 +69,12 @@ sum :
 	
 sumsyn :
 	$(VLOG) $(SYNSRC) $(SUMMATION) $(RAMMODEL)  $(VLOGARGSRC) +define+NETLIST
+	
+multsyn :
+	$(VLOG) $(SYNSRC) $(MULT) $(RAMMODEL)  $(VLOGARGSRC) +define+NETLIST	
+	
+mysyn :
+	$(VLOG) $(SYNSRC) $(my) $(RAMMODEL)  $(VLOGARGSRC) +define+NETLIST	
 	
 check :
 	$(VLOG) -c $(SRC) $(VLOGARG)

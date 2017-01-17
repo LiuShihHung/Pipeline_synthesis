@@ -2,7 +2,7 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+define+IPATH=\"01_gcd_plain_bin.dat\"+DPATH=\"01_gcd_plain_data.dat\"
++define+IPATH=\"my_test.dat\"+DPATH=\"my_testd.dat\"
 +access+r
 +define+NETLIST
 -noshowtop

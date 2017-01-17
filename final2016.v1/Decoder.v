@@ -40,14 +40,14 @@ always@(*)
 			7'b0000000:
 				begin
 					RW = 0 ;
-					MD = 2'bxx ;
+					MD = 2'b00 ;
 					BS = 0 ;
 					PS = 1'b0 ;
 					MW = 0 ;
-					FS = 4'bxxxx ;
-					MB = 1'bx ;
-					MA = 1'bx ;
-					CS = 1'bx ; 
+					FS = 4'b0000 ;
+					MB = 1'b0;
+					MA = 1'b0 ;
+					CS = 1'b0 ; 
 				end
 			7'b1000000:
 				begin 
@@ -57,9 +57,9 @@ always@(*)
 					PS = 1'b0 ;
 					MW = 0 ;
 					FS = 4'b0000 ;
-					MB = 1'bx ;
+					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0000010:
 				begin
@@ -71,7 +71,7 @@ always@(*)
 					FS = 4'b0010 ;
 					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0000101:
 				begin	
@@ -83,7 +83,7 @@ always@(*)
 					FS = 4'b0101 ;
 					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0001000:
 				begin 
@@ -95,7 +95,7 @@ always@(*)
 					FS = 4'b1000 ;
 					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0001001:
 				begin 
@@ -107,7 +107,7 @@ always@(*)
 					FS = 4'b1001 ;
 					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0001010:
 				begin 
@@ -119,7 +119,7 @@ always@(*)
 					FS = 4'b1010 ;
 					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0001011:
 				begin 
@@ -129,9 +129,9 @@ always@(*)
 					PS = 1'b0 ;
 					MW = 0 ;
 					FS = 4'b1011 ;
-					MB = 1'bx ;
+					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			//immediate 
 			7'b0100010:
@@ -228,8 +228,8 @@ always@(*)
 					MW = 0 ;
 					FS = 4'b1100 ;
 					MB = 1'b0 ;
-					MA = 1'bx ;
-					CS = 1'bx ; 
+					MA = 1'b0 ;
+					CS = 1'b0 ; 
 				end
 			7'b0001101:
 				begin 
@@ -239,9 +239,9 @@ always@(*)
 					PS = 1'b0 ;
 					MW = 0 ;
 					FS = 4'b1101 ;
-					MB = 1'bx ;
+					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0001110:
 				begin 
@@ -251,9 +251,9 @@ always@(*)
 					PS = 1'b0 ;
 					MW = 0 ;
 					FS = 4'b1110 ;
-					MB = 1'bx ;
+					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0010000:
 				begin 
@@ -262,34 +262,34 @@ always@(*)
 					BS = 0 ;
 					PS = 1'b0 ;
 					MW = 0 ;
-					FS = 4'bxxxx ;
-					MB = 1'bx ;
+					FS = 4'b0000 ;
+					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b0100000:
 				begin 
 					RW = 0 ;
-					MD = 2'bxx ;
+					MD = 2'b00 ;
 					BS = 0 ;
 					PS = 1'b0;
 					MW = 1 ;
-					FS = 4'bxxxx ;
+					FS = 4'b0000 ;
 					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b1110000:
 				begin 
 					RW = 0 ;
-					MD = 2'bxx ;
+					MD = 2'b00 ;
 					BS = 2'b10 ;
 					PS = 1'b0 ;
 					MW = 0 ;
-					FS = 4'bxxxx ;
-					MB = 1'bx ;
+					FS = 4'b0000 ;
+					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b1100101:
 				begin 
@@ -301,12 +301,12 @@ always@(*)
 					FS = 4'b0101 ;
 					MB = 1'b0 ;
 					MA = 1'b0 ;
-					CS = 1'bx ; 
+					CS = 1'b0 ; 
 				end
 			7'b1100000:
 				begin 
 					RW = 0 ;
-					MD = 2'bxx ;
+					MD = 2'b00 ;
 					BS = 2'b01 ;
 					PS = 1'b0 ;
 					MW = 0 ;
@@ -318,7 +318,7 @@ always@(*)
 			7'b1001000:
 				begin 
 					RW = 0 ;
-					MD = 2'bxx ;
+					MD = 2'b00 ;
 					BS = 2'b01 ;
 					PS = 1'b1 ;
 					MW = 0 ;
@@ -330,13 +330,13 @@ always@(*)
 			7'b1101000:
 				begin 
 					RW = 0 ;
-					MD = 2'bxx ;
+					MD = 2'b00 ;
 					BS = 2'b11 ;
 					PS = 1'b0;
 					MW = 0 ;
-					FS = 4'bxxxx ;
+					FS = 4'b0000 ;
 					MB = 1'b1 ;
-					MA = 1'bx ;
+					MA = 1'b0 ;
 					CS = 1'b1 ; 
 				end
 			7'b0110000:

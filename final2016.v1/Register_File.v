@@ -28,7 +28,8 @@ always @(posedge clk or negedge rst_n)
 					begin
 					
 					Register[DA] = BUS_D ;
-					$display(" *****Register[%d] IS %d *****",DA , Register[1]);
+					$display(" *****Register[1] IS %d *****" , Register[1]);
+					$display(" *****Register[2] IS %d *****" , Register[2]);
 				
 					end
 			end

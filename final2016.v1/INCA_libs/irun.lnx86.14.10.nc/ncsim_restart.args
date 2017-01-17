@@ -2,14 +2,14 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+define+IPATH=\"01_gcd_plain_bin.dat\"+DPATH=\"01_gcd_plain_data.dat\"
++define+IPATH=\"my_test.dat\"+DPATH=\"my_testd.dat\"
 +access+r
 +define+NETLIST
 -MESSAGES
 +EMGRLOG
 ncverilog.log
 -XLSTIME
-1484670180
+1484680061
 -XLKEEP
 -XLMODE
 ./INCA_libs/irun.lnx86.14.10.nc
@@ -23,4 +23,4 @@ ncverilog
 -XLVERSION
 "TOOL:	ncverilog	14.10-s005"
 -XLNAME
-./INCA_libs/irun.lnx86.14.10.nc/ic25.cs.nthu.edu.tw_14492
+./INCA_libs/irun.lnx86.14.10.nc/ic25.cs.nthu.edu.tw_16776

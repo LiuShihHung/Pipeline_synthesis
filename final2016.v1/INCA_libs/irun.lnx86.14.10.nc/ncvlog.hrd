@@ -3,8 +3,8 @@
 // Do not modify this file
 //
 -DEFINE
-IPATH=\"01_gcd_plain_bin.dat\"
+IPATH=\"my_test.dat\"
 -DEFINE
-DPATH=\"01_gcd_plain_data.dat\"
+DPATH=\"my_testd.dat\"
 -DEFINE
 NETLIST

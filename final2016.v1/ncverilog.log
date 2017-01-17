@@ -1,5 +1,5 @@
 ncverilog: 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
-TOOL:	ncverilog	14.10-s005: Started on Jan 18, 2017 at 00:23:00 CST
+TOOL:	ncverilog	14.10-s005: Started on Jan 18, 2017 at 03:07:41 CST
 ncverilog
 	header.v
 	syn.v
@@ -7,7 +7,7 @@ ncverilog
 	RAM2Kx32.v
 	/theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v
 	risc_t.v
-	+define+IPATH="01_gcd_plain_bin.dat"+DPATH="01_gcd_plain_data.dat"
+	+define+IPATH="my_test.dat"+DPATH="my_testd.dat"
 	RAM2Kx32.v
 	+access+r
 	+define+NETLIST
@@ -5053,9 +5053,6 @@ ncelab: *W,CUVWSI (./risc_t.v,52|38): 1 input port was not connected:
 ncelab: (./RAM2Kx32.v,17): D
 
 	Reading SDF file from location "pipeline.sdf"
-	Compiled SDF file "pipeline.sdf.X" older than source SDF file "pipeline.sdf".
-	Recompiling.
-	Writing compiled SDF file to "pipeline.sdf.X".
 	.OEN(0),
 	     |
 ncelab: *W,CUVMPW (./risc_t.v,57|6): port sizes differ in port connection (32/1).
@@ -6770,10 +6767,10 @@ ncelab: *W,SDFNCAP (./syn.v,642|7): The interconnect source Pipeline.Pipeline.in
 			streams:   1, words:   120
 		worklib.Pipeline:v <0x38433bb5>
 			streams:   6, words:  3008
-		worklib.RAM2Kx32:v <0x23d82c5d>
-			streams:  19, words: 10209
-		worklib.RAM2Kx32:v <0x78872067>
-			streams:  19, words: 10209
+		worklib.RAM2Kx32:v <0x1530d3d0>
+			streams:  19, words: 10210
+		worklib.RAM2Kx32:v <0x229c430a>
+			streams:  19, words: 10210
 		worklib.Register_File:v <0x0399b502>
 			streams:   0, words:     0
 		worklib.pipeline:v <0x357064d4>
@@ -6807,28 +6804,28 @@ ncsim> run
 Dumping memory content of Pipeline.I_mem...
 [          0] 01000101000000000000010000000000
 [          1] 00100000001010000000000000000000
-[          2] 01000101000100000000010000000001
-[          3] 00100000001110001000000000000000
-[          4] 00001010000100010000110000000000
-[          5] 11000000000000001000000000000110
-[          6] 11001010000100010000110000000000
-[          7] 10010000000000001000000000000010
-[          8] 00001010001000010000110000000000
-[          9] 11010000000000000111111111111010
-[         10] 00001010001100011000100000000000
-[         11] 11010000000000000111111111111000
-[         12] 01000101001000000000010000000010
-[         13] 01000000000010010000100000000000
+[          2] 00000100000100001000100000000000
+[          3] 01001010001000010000000000000001
+[          4] 10010000000000010111111111111101
+[          5] 01000101001000000000010000000010
+[          6] 01000000000010010000010000000000
+[          7] 00000000000000000000000000000000
+[          8] 00000000000000000000000000000000
+[          9] 00000000000000000000000000000000
+[         10] 00000000000000000000000000000000
+[         11] 00000000000000000000000000000000
+[         12] 00000000000000000000000000000000
+[         13] 00000000000000000000000000000000
 [         14] 00000000000000000000000000000000
 [         15] 00000000000000000000000000000000
 [         16] 00000000000000000000000000000000
-[         17] 00000000000000000000000000000000
-[         18] 00000000000000000000000000000000
-[         19] 00000000000000000000000000000000
-[         20] 00000000000000000000000000000000
-[         21] 00000000000000000000000000000000
-[         22] 00000000000000000000000000000000
-[         23] 00000000000000000000000000000000
+[         17] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[         18] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[         19] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[         20] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[         21] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[         22] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[         23] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [         24] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [         25] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [         26] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -9881,10 +9878,10 @@ Dumping memory content of Pipeline.d_mem...
 [       1021] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1022] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1023] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-[       1024] 00000000000000000000000000011011
+[       1024] 00000000000000000000000000110010
 [       1025] 00000000000000000000000000001100
-[       1026] 00000000000000000000000000000000
-[       1027] 00000000000000000000000000000000
+[       1026] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[       1027] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1028] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1029] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1030] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -10393,7 +10390,7 @@ Dumping memory content of Pipeline.d_mem...
 [       1533] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1534] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1535] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-[       1536] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[       1536] 00000000000000000000000000000000
 [       1537] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1538] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [       1539] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -10914,23 +10911,9 @@ FSDB Dumper for IUS, Release Verdi3_J-2014.12-SP3, Linux, 07/05/2015
 *Verdi3* : Create FSDB file 'pipeline_syn.fsdb'
 *Verdi3* : Begin traversing the scopes, layer (0).
 *Verdi3* : End of traversing.
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CLK &&& re_data_flag:1644 NS, negedge D[0]:1644239 PS,  1.000 : 1 NS,  0.500 : 500 PS );
-            File: ./RAM2Kx32.v, line = 586
-           Scope: Pipeline.d_mem
-            Time: 1644239 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CLK &&& re_data_flag:1644 NS, negedge D[1]:1644239 PS,  1.000 : 1 NS,  0.500 : 500 PS );
-            File: ./RAM2Kx32.v, line = 588
-           Scope: Pipeline.d_mem
-            Time: 1644239 PS
-
-01_gcd_plain_bin.dat
-01_gcd_plain_data.dat
+my_test.dat
+my_testd.dat
 Simulation complete via $finish(1) at time 6030 NS + 0
 ./risc_t.v:93 		$finish;
 ncsim> exit
-TOOL:	ncverilog	14.10-s005: Exiting on Jan 18, 2017 at 00:23:04 CST  (total: 00:00:04)
+TOOL:	ncverilog	14.10-s005: Exiting on Jan 18, 2017 at 03:07:50 CST  (total: 00:00:09)

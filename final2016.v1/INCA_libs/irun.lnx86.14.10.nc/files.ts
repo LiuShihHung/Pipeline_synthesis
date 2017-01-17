@@ -5,9 +5,9 @@
 1484669724 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline.v
 1484238910 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/MUX_A.v
 1484288581 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/MUX_B.v
-1484593422 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/Decoder.v
+1484673785 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/Decoder.v
 1484301275 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/Function_unit.v
 1484288605 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/MUX_D.v
-1484590402 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/Register_File.v
+1484677413 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/Register_File.v
 1484593565 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/syn.v
 1173075089 /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v
