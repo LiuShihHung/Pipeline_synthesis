@@ -1,8 +1,8 @@
 1483812211 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/header.v
-1484596711 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/risc_t.v
+1484669776 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/risc_t.v
 1483811101 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/RAM2Kx32.v
 1484249651 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/top.v
-1484596512 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline.v
+1484669724 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline.v
 1484238910 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/MUX_A.v
 1484288581 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/MUX_B.v
 1484593422 /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/Decoder.v

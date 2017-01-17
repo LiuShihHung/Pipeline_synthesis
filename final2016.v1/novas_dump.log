@@ -24,7 +24,7 @@ PCTHOME=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/pc
 MACHTYPE=x86_64
 LESSOPEN=|/usr/bin/lesspipe.sh %s
 CWR_USING_LNX_KERNEL_THREADS=1
-SSH_CONNECTION=192.168.75.200 37382 192.168.75.55 22
+SSH_CONNECTION=192.168.75.200 38375 192.168.75.55 22
 PATH=/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/celtic/bin:/usr/cad/cadence/EDI/cur/tools/plato/bin:/usr/cad/cadence/EDI/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/fe/bin:/usr/cad/cadence/EDI/cur/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur/tools/bin:/usr/cad/cadence/EDI/cur//tools/tlfUtil/bin:/usr/cad/cadence/CTOS/cur/tools.lnx86/bin:/usr/cad/cadence/MMSIM/cur/tools/dfII/bin:/usr/cad/cadence/MMSIM/cur/tools/bin:/usr/cad/cadence/EXT/cur/tools/bin:/usr/cad/cadence/ETS/cur/tools/bin:/usr/cad/cadence/CONFRML/cur/./bin:/usr/cad/cadence/CONFRML/cur/tools/bin:/usr/cad/cadence/IC/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dracula/bin:/usr/cad/cadence/IC/cur/tools/bin:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/pc/bin:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/InnoGUI/Innovator/Bin:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/tools/bin:/usr/cad/synopsys/icc/cur/amd64/syn/bin:/usr/bin/X11:/usr/cad/synopsys/coreconsultant/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/vcs-mx/cur/bin:/usr/cad/synopsys/vcs-mx/cur/linux/bin:/usr/cad/synopsys/vcs-mx/cur/linux/util:/usr/cad/synopsys/vcs-mx/cur/linux/flexlm:/usr/bin/X11:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin
 LM_LICENSE_FILE=5280@lsnctu:5280@lscic:26585@lscic:26585@lsnctu:8224@lscic.cic.org.tw
 SNPS_VP_HTYPE=linux
@@ -61,7 +61,7 @@ REMOTEHOST=nthucad.cs.nthu.edu.tw
 CVS_RSH=ssh
 MAKEFLAGS=
 MFLAGS=
-SSH_CLIENT=192.168.75.200 37382 22
+SSH_CLIENT=192.168.75.200 38375 22
 MAIL=/var/spool/mail/dsd17
 COWARE_AUX_BIN=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/common/bin
 COWARE_JRE=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/../linux/java
@@ -98,9 +98,9 @@ argv[8]=RAM2Kx32.v
 argv[9]=+access+r
 argv[10]=+define+NETLIST
 99 profile - 100
-          CPU/Mem usage: 0.070 sys,  0.070 user,  64.74M sys,  0.00M vm
+          CPU/Mem usage: 0.070 sys,  0.070 user,  64.77M sys,  0.00M vm
 100 VC callback profile - scalar:0 vector:0
-101 Tue Jan 17 04:00:33 2017
+101 Wed Jan 18 00:23:03 2017
 102 pliAppInit
 103 *Verdi3* : Enable Parallel Dumping.
 104 pliAppMiscSet: New Sim Round
@@ -117,12 +117,12 @@ argv[10]=+define+NETLIST
 #6  0x004e58b6 in _IO_getline_info_internal () from /lib/libc.so.6
 #7  0x004e5801 in _IO_getline_internal () from /lib/libc.so.6
 #8  0x004e477a in fgets () from /lib/libc.so.6
-#9  0xf6af9c5a in ndpGetCallStack () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius141.so
-#10 0xf6b30e13 in pliAppDbg_SigHandler () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius141.so
-#11 0xf6af964d in catchSignalCB () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius141.so
+#9  0xf6ae9c5a in ndpGetCallStack () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius141.so
+#10 0xf6b20e13 in pliAppDbg_SigHandler () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius141.so
+#11 0xf6ae964d in catchSignalCB () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius141.so
 #12 <signal handler called>
-#13 0x0a3ca58a in ?? ()
-#14 0x0a3ca580 in ?? ()
+#13 0x0bcca5aa in ?? ()
+#14 0x0bcca5a0 in ?? ()
 #15 0x00000000 in ?? ()
 109 FSDB Dumper for IUS, Release Verdi3_J-2014.12-SP3, Linux, 07/05/2015
 110 (C) 1996 - 2015 by Synopsys, Inc.
@@ -135,21 +135,21 @@ argv[10]=+define+NETLIST
 117 Cell instance `Pipeline.Pipeline.\EX_BUS_B_reg[0] '.
 118 *Verdi3* : End of traversing.
 119 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.090 sys,  0.760 user,  220.96M sys,  0.00M vm
-                   incr: 0.010 sys,  0.680 user,  13.48M sys,  0.00M vm
-                   accu: 0.010 sys,  0.680 user,  13.48M sys,  0.00M vm
-              accu incr: 0.010 sys,  0.680 user,  13.48M sys,  0.00M vm
+          CPU/Mem usage: 0.080 sys,  0.740 user,  220.97M sys,  0.00M vm
+                   incr: 0.000 sys,  0.650 user,  13.48M sys,  0.00M vm
+                   accu: 0.000 sys,  0.650 user,  13.48M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.650 user,  13.48M sys,  0.00M vm
 
           Count usage: 51182 var,  17044 idcode,  17044 callback
                  incr: 51182 var,  17044 idcode,  17044 callback
                  accu: 51182 var,  17044 idcode,  17044 callback
             accu incr: 51182 var,  17044 idcode,  17044 callback
 120 VC callback profile - scalar:0 vector:0
-121 Tue Jan 17 04:00:34 2017
+121 Wed Jan 18 00:23:04 2017
 122 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.090 sys,  0.770 user,  222.02M sys,  0.00M vm
+          CPU/Mem usage: 0.080 sys,  0.750 user,  222.02M sys,  0.00M vm
                    incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
-                   accu: 0.010 sys,  0.690 user,  14.54M sys,  0.00M vm
+                   accu: 0.000 sys,  0.660 user,  14.54M sys,  0.00M vm
               accu incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
 
           Count usage: 51182 var,  17044 idcode,  17044 callback
@@ -157,10 +157,10 @@ argv[10]=+define+NETLIST
                  accu: 51182 var,  17044 idcode,  17044 callback
             accu incr: 0 var,  0 idcode,  0 callback
 123 VC callback profile - scalar:17001 vector:43
-124 Tue Jan 17 04:00:34 2017
+124 Wed Jan 18 00:23:04 2017
 125 End of simulation at 6030000
-126 VC callback profile - scalar:116006 vector:1032
-127 Tue Jan 17 04:00:34 2017
+126 VC callback profile - scalar:114752 vector:1032
+127 Wed Jan 18 00:23:04 2017
 128 Parallel profile    -  Flush:3 ProduceWait:0 ConsumerWait:0 BlockUsed:0
 129 SimExit
 130 Sim process exit

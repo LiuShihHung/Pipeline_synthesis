@@ -1,5 +1,5 @@
 ncverilog: 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
-TOOL:	ncverilog	14.10-s005: Started on Jan 17, 2017 at 04:00:30 CST
+TOOL:	ncverilog	14.10-s005: Started on Jan 18, 2017 at 00:23:00 CST
 ncverilog
 	header.v
 	syn.v
@@ -5078,7 +5078,7 @@ ncelab: *W,SDFAND: Attempted INTERCONNECT annotation to non-existent destination
 ncelab: *W,SDFAND: Attempted INTERCONNECT annotation to non-existent destination port C1 at scope level U479 <./pipeline.sdf, line 27>.
 ncelab: *W,SDFINF: Instance add_366 not found at scope level <top-level> <./pipeline.sdf, line 1773>.
 ncelab: *W,SDFAND: Attempted INTERCONNECT annotation to non-existent destination port B at scope level U255 <./pipeline.sdf, line 670>.
-ncelab: *W,SDFINF: Instance add_391 not found at scope level <top-level> <./pipeline.sdf, line 1817>.
+ncelab: *W,SDFINF: Instance add_390 not found at scope level <top-level> <./pipeline.sdf, line 1817>.
 ncelab: *W,SDFAND: Attempted INTERCONNECT annotation to non-existent destination port A at scope level U305 <./pipeline.sdf, line 559>.
 ncelab: *W,SDFAND: Attempted INTERCONNECT annotation to non-existent destination port B at scope level U305 <./pipeline.sdf, line 560>.
 ncelab: *W,SDFAND: Attempted INTERCONNECT annotation to non-existent destination port A at scope level U466 <./pipeline.sdf, line 94>.
@@ -5319,7 +5319,7 @@ ncelab: *W,SDFCTE: Module AND2X8 of instance Pipeline.Pipeline.U254 does not mat
 ncelab: *W,SDFCTE: Module AND2XL of instance Pipeline.Pipeline.U253 does not match SDF celltype of INVX4, skipping annotation <./pipeline.sdf, line 21173>.
 ncelab: *W,SDFCTE: Module INVX4 of instance Pipeline.Pipeline.U252 does not match SDF celltype of CLKINVX2, skipping annotation <./pipeline.sdf, line 21182>.
 ncelab: *W,SDFINF: Instance add_366 not found at scope level <top-level> <./pipeline.sdf, line 29100>.
-ncelab: *W,SDFINF: Instance add_391 not found at scope level <top-level> <./pipeline.sdf, line 29615>.
+ncelab: *W,SDFINF: Instance add_390 not found at scope level <top-level> <./pipeline.sdf, line 29615>.
 ncelab: *W,SDFINF: Instance U213 not found at scope level <top-level> <./pipeline.sdf, line 99488>.
 ncelab: *W,SDFINF: Instance U211 not found at scope level <top-level> <./pipeline.sdf, line 99502>.
 ncelab: *W,SDFINF: Instance U159 not found at scope level <top-level> <./pipeline.sdf, line 99513>.
@@ -10916,28 +10916,21 @@ FSDB Dumper for IUS, Release Verdi3_J-2014.12-SP3, Linux, 07/05/2015
 *Verdi3* : End of traversing.
 
 Warning!  Timing violation
-           $setuphold<hold>( posedge CK:30 NS, posedge RN:30 NS,  0.064 : 64 PS,  0.080 : 80 PS );
-            File: /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 23207
-           Scope: Pipeline.Pipeline.\EX_BUS_B_reg[1] 
-            Time: 30 NS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CLK &&& re_data_flag:1390 NS, negedge D[0]:1390239 PS,  1.000 : 1 NS,  0.500 : 500 PS );
+           $setuphold<hold>( posedge CLK &&& re_data_flag:1644 NS, negedge D[0]:1644239 PS,  1.000 : 1 NS,  0.500 : 500 PS );
             File: ./RAM2Kx32.v, line = 586
            Scope: Pipeline.d_mem
-            Time: 1390239 PS
+            Time: 1644239 PS
 
 
 Warning!  Timing violation
-           $setuphold<hold>( posedge CLK &&& re_data_flag:1390 NS, negedge D[1]:1390239 PS,  1.000 : 1 NS,  0.500 : 500 PS );
+           $setuphold<hold>( posedge CLK &&& re_data_flag:1644 NS, negedge D[1]:1644239 PS,  1.000 : 1 NS,  0.500 : 500 PS );
             File: ./RAM2Kx32.v, line = 588
            Scope: Pipeline.d_mem
-            Time: 1390239 PS
+            Time: 1644239 PS
 
 01_gcd_plain_bin.dat
 01_gcd_plain_data.dat
 Simulation complete via $finish(1) at time 6030 NS + 0
 ./risc_t.v:93 		$finish;
 ncsim> exit
-TOOL:	ncverilog	14.10-s005: Exiting on Jan 17, 2017 at 04:00:34 CST  (total: 00:00:04)
+TOOL:	ncverilog	14.10-s005: Exiting on Jan 18, 2017 at 00:23:04 CST  (total: 00:00:04)

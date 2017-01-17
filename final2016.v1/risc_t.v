@@ -68,7 +68,7 @@ RAM2Kx32 #(.preload_file(`DPATH)) d_mem(
 	.D(Dmem_output)
 );
 
-	always #(period/2)clk = ~clk;
+	always #(period/2 + 2 )clk = ~clk;
 
 	initial begin
     `ifdef NETLIST

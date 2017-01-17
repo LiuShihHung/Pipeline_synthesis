@@ -197,14 +197,14 @@ StickSet-TextColor = black
 [FSM_Dlg-Print]
 Orientation = Landscape
 [FileBrowser]
-nWaveOpenFsdbDirHistory = /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline_syn.fsdb,/users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline.fsdb,/users/course/2016F/cs4125/dsd17/final_project/final2016.v1/my.fsdb,/users/course/2016F/cs4125/dsd17/fin\
+nWaveOpenFsdbDirHistory = /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/my.fsdb,/users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline.fsdb,/users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline_syn.fsdb,/users/course/2016F/cs4125/dsd17/fin\
 al_project/final2016.v1,
 [Form]
 version = Verdi3_J-2014.12-SP3
 wave/aliasEditor.fm = 673,170,584,536
 openfile.fm = 100,100,723,532
-wave/activeFile.fm = 100,100,530,200
 wave/openWFile.fm = 336,156,823,696
+wave/activeFile.fm = 100,100,530,200
 wave/getSignal.fm = 100,100,856,562
 [General]
 autoSaveSession = FALSE
@@ -515,8 +515,8 @@ waveform_vertical_scroll_bar = TRUE
 scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
-getSignalForm = 100 100 856 562 200 439 397 120
-viewPort = 8 31 1916 1008 100 208
+getSignalForm = 100 100 856 562 200 439 405 120
+viewPort = 8 31 1916 1008 185 208
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -759,8 +759,8 @@ curveWindow_Drag&Drop_Mode = TRUE
 hspiceIncOpenMode = TRUE
 pcSelectMode = TRUE
 hierarchyDelimiter = /
-RecentFile1 = /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline.fsdb
-RecentFile2 = /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline_syn.fsdb
+RecentFile1 = /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline_syn.fsdb
+RecentFile2 = /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/pipeline.fsdb
 RecentFile3 = /users/course/2016F/cs4125/dsd17/final_project/final2016.v1/my.fsdb
 open_file_time_range = FALSE
 value_window_aligment = Right

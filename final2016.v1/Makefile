@@ -60,7 +60,7 @@ gcdsyn :
 	
 
 sum :
-	$(VLOG) $(NONSYN) $(SUMMATION) $(RAMMODEL) $(VLOGARG) $(DEBUG) +define+CYC=800
+	$(VLOG) $(NONSYN) $(SUMMATION) $(RAMMODEL) $(VLOGARG) $(DEBUG) +define+CYC=1000
 	
 sumsyn :
 	$(VLOG) $(SYNSRC) $(SUMMATION) $(RAMMODEL)  $(VLOGARGSRC) +define+NETLIST

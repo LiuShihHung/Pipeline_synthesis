@@ -386,7 +386,6 @@ end
 		end
 	end
 
-/* MUXC */
 	always @(*) begin	
 		pc_next = pc + 1;
 		case(C_sel)
